@@ -1,6 +1,6 @@
 {
   "name": "@autopack/rpack",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "📦 基于rollup的React包构建工具 | One common construction and package tool for React components based on Rollup 📦",
   "author": "yanpanmichael",
   "license": "MIT",
