@@ -39,7 +39,7 @@ npm i -D @autopack/rpack@latest # OR yarn add -D @autopack/rpack@latest
   },
 ```
 
-需要通过参数`source`指定构建打包源文件格式，其取值为`'react'`四种格式之一。
+需要通过参数`source`指定构建打包源文件格式，其取值为`'react'格式。
 
 You need to specify the build and packaging source file format through the parameter 'source', and its values are one of the four formats of 'react'.
 

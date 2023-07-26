@@ -29,7 +29,7 @@ npm i -D @autopack/rpack # 或 yarn add -D @autopack/rpack
   },
 ```
 
-需要通过参数`source`指定构建打包源文件格式，其取值为`'react'`格式之一。
+需要通过参数`source`指定构建打包源文件格式，其取值为`'react'`格式。
 
 **第二步**：命令行进入项目目录，运行：
 
