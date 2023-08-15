@@ -8,7 +8,7 @@
 ## ✨ 特性
 
 - 基于 rollup 的基础核心构建工具
-- 支持 javascript、typescript
+- 支持 react
 - 支持自定义banner，可通过指定package中__cusBannerString__字段值修改本工具品牌名称
 
 ## 🚀 快速开始
@@ -25,11 +25,9 @@ npm i -D @autopack/rpack # 或 yarn add -D @autopack/rpack
 
 ```js
   "scripts": {
-    "build": "NODE_ENV=production @autopack/rpack build --source=js"
+    "build": "NODE_ENV=production @autopack/rpack build"
   },
 ```
-
-需要通过参数`source`指定构建打包源文件格式，其取值为`'react'`格式。
 
 **第二步**：命令行进入项目目录，运行：
 

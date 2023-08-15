@@ -4,6 +4,6 @@
 
 ### 安装：npm install --save @autopack/rpack
 
-[GitHub](https://github.com/YanPanMichael/cpack)
+[GitHub](https://github.com/YanPanMichael/rpack)
 [npm](https://www.npmjs.com/package/@autopack/rpack)
 [Get Started](installation)

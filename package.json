@@ -16,8 +16,7 @@
   "keywords": [
     "rollup",
     "@autopack/rpack",
-    "javascript bundler",
-    "typescript bundler",
+    "react component bundler",
     "package-bundler"
   ],
   "bin": {
@@ -30,7 +29,7 @@
   },
   "scripts": {
     "release": "qkrelease --skipBuild",
-    "build": "cross-env NODE_ENV=production BABEL_ENV=production node bin/cli.js --source=react",
+    "build": "cross-env NODE_ENV=production BABEL_ENV=production node bin/cli.js",
     "format": "prettier --write .",
     "lint": "eslint src",
     "fix": "eslint src/**/*.* --fix",

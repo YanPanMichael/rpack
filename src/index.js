@@ -22,25 +22,16 @@ module.exports = (custumConfig) => {
     })
     .help('h')
 
-  const sourceFormat = yargs.argv.source?.toLowerCase()
   const command = yargs.argv._[0]
 
   console.log(
     '🚀 Command:',
     command || 'runnding default',
-    '📌 Format:',
-    sourceFormat
+    '📌 Format: react'
   )
-
-  if (!['react'].includes(sourceFormat)) {
-    return console.log(
-      '😑 Please input source format which includes react \n'
-    )
-  }
 
   const cliConfig = {
     debug: !!yargs.argv.debug, // 调试模式
-    sourceFormat: sourceFormat // 编译源文件格式
   }
 
   if (command === undefined || command === 'build') {

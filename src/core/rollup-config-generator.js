@@ -60,7 +60,6 @@ const cssModulesConfig = isProd
 
 module.exports = (packConfig, pkg, formatMapping, cliConfig) => {
   const version = process.env.VERSION || pkg.version
-  const { sourceFormat } = cliConfig
   const stylusAlias = packConfig.stylusAlias
   const replaceMaps = packConfig.replaceMaps || {}
   const Evaluator = require('stylus').Evaluator

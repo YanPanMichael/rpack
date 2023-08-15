@@ -9,10 +9,9 @@ module.exports = ({ pkg, cwd } = {}) => {
   return {
     // 输入 input
     input: [
-      'examples/react/index.tsx'
+      'src/index.tsx'
       // ...getFiles('./packages', extensions, excludeExtensions)
     ],
-    // input: 'examples/react/index.tsx',
     // 输出 output
     output: {
       // 目录

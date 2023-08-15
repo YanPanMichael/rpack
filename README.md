@@ -1,6 +1,6 @@
 <!-- <img src="icon.png" align="right" /> -->
 
-# @autopack/rpack [![@autopack/rpack](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/yanppanmichael/autopack-cpack#readme)
+# @autopack/rpack [![@autopack/rpack](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/yanppanmichael/autopack-rpack#readme)
 
 [![Sponsor][sponsor-badge]][sponsor]
 [![TypeScript version][ts-badge]][typescript-4-0]
@@ -14,11 +14,11 @@
 ## ✨ Features
 
 - 基于 rollup 的基础核心构建工具
-- 支持 Javascript、Typescript
+- 支持 React
 - 支持自定义banner，可通过指定package中__cusBannerString__字段值修改本工具品牌名称
 
 - Basic core build tools based on rollup
-- Supports mutiple frameworks such as JavaScript, TypeScript
+- Supports mutiple frameworks such as React
 - Support custom banner, you can modify the brand name of this tool by specifying the value of the __cusBannerString__ field in the package
 
 ## 🚀 Quick Start
@@ -35,13 +35,9 @@ npm i -D @autopack/rpack@latest # OR yarn add -D @autopack/rpack@latest
 
 ```js
   "scripts": {
-    "build": "NODE_ENV=production @autopack/rpack build --source=js"
+    "build": "NODE_ENV=production @autopack/rpack build"
   },
 ```
-
-需要通过参数`source`指定构建打包源文件格式，其取值为`'react'格式。
-
-You need to specify the build and packaging source file format through the parameter 'source', and its values are one of the four formats of 'react'.
 
 **Second Step**：Goes to the project directory and runs:
 
@@ -112,7 +108,7 @@ batchPackage 布尔状态会自动开启批量打包, 默认批量路径为"./pa
 module.exports = ({ pkg } = {}) => {
   return {
     // 输入 Input
-    input: 'src/index.js',
+    input: 'src/index.tsx',
 
     // 输出 Output
     output: {
